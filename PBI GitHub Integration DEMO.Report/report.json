@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2},\"customTheme\":{\"name\":\"UCSB_Color_Theme15249047169254237.json\",\"version\":\"5.59\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2},\"customTheme\":{\"name\":\"UCSB_Color_Theme15249047169254237.json\",\"version\":\"5.59\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -41,21 +41,21 @@
       "name": "aed5f9a8690278aba600",
       "visualContainers": [
         {
-          "config": "{\"name\":\"29f214d5bc0e3aac9ca4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":767,\"y\":369,\"z\":1,\"width\":471,\"height\":309,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"student_activity_data.ACTIVITY_TYPE\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(student_activity_data.HOURS_SPENT)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"student_activity_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ACTIVITY_TYPE\"},\"Name\":\"student_activity_data.ACTIVITY_TYPE\",\"NativeReferenceName\":\"ACTIVITY_TYPE\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"HOURS_SPENT\"}},\"Function\":0},\"Name\":\"Sum(student_activity_data.HOURS_SPENT)\",\"NativeReferenceName\":\"Sum of HOURS_SPENT\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"HOURS_SPENT\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"a6a2994ccc720971db5d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":960,\"y\":12.644376899696049,\"z\":1,\"width\":320,\"height\":98.2370820668693,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"student_data.GENDER\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"student_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"GENDER\"},\"Name\":\"student_data.GENDER\",\"NativeReferenceName\":\"GENDER\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
           "filters": "[]",
-          "height": 309.00,
-          "width": 471.00,
-          "x": 767.00,
-          "y": 369.00,
+          "height": 98.24,
+          "width": 320.00,
+          "x": 960.00,
+          "y": 12.64,
           "z": 1.00
         },
         {
-          "config": "{\"name\":\"37b5dbe97e7922a8ec06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":109,\"y\":369,\"z\":0,\"width\":325,\"height\":177,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"student_activity_data.ACTIVITY_TYPE\"},{\"queryRef\":\"CountNonNull(student_activity_data.ACTIVITY_TYPE)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"student_activity_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ACTIVITY_TYPE\"},\"Name\":\"student_activity_data.ACTIVITY_TYPE\",\"NativeReferenceName\":\"ACTIVITY_TYPE\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ACTIVITY_TYPE\"}},\"Function\":5},\"Name\":\"CountNonNull(student_activity_data.ACTIVITY_TYPE)\",\"NativeReferenceName\":\"Count of ACTIVITY_TYPE\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"d5d735f2540a28087751\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.40121580547113,\"y\":170.2127659574468,\"z\":0,\"width\":598.1762917933131,\"height\":355.01519756838906,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(student_activity_data.HOURS_SPENT)\"}],\"Category\":[{\"queryRef\":\"student_activity_data.ACTIVITY_TYPE\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"student_activity_data\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"HOURS_SPENT\"}},\"Function\":0},\"Name\":\"Sum(student_activity_data.HOURS_SPENT)\",\"NativeReferenceName\":\"Sum of HOURS_SPENT\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ACTIVITY_TYPE\"},\"Name\":\"student_activity_data.ACTIVITY_TYPE\",\"NativeReferenceName\":\"ACTIVITY_TYPE\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"HOURS_SPENT\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 177.00,
-          "width": 325.00,
-          "x": 109.00,
-          "y": 369.00,
+          "height": 355.02,
+          "width": 598.18,
+          "x": 92.40,
+          "y": 170.21,
           "z": 0.00
         }
       ],
