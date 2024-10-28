@@ -1,0 +1,66 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2},\"customTheme\":{\"name\":\"UCSB_Color_Theme15249047169254237.json\",\"version\":\"5.59\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "UCSB_Color_Theme15249047169254237.json",
+            "path": "UCSB_Color_Theme15249047169254237.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "aed5f9a8690278aba600",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"29f214d5bc0e3aac9ca4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":767,\"y\":369,\"z\":1,\"width\":471,\"height\":309,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"student_activity_data.ACTIVITY_TYPE\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(student_activity_data.HOURS_SPENT)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"student_activity_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ACTIVITY_TYPE\"},\"Name\":\"student_activity_data.ACTIVITY_TYPE\",\"NativeReferenceName\":\"ACTIVITY_TYPE\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"HOURS_SPENT\"}},\"Function\":0},\"Name\":\"Sum(student_activity_data.HOURS_SPENT)\",\"NativeReferenceName\":\"Sum of HOURS_SPENT\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"HOURS_SPENT\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 309.00,
+          "width": 471.00,
+          "x": 767.00,
+          "y": 369.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"37b5dbe97e7922a8ec06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":109,\"y\":369,\"z\":0,\"width\":325,\"height\":177,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"student_activity_data.ACTIVITY_TYPE\"},{\"queryRef\":\"CountNonNull(student_activity_data.ACTIVITY_TYPE)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"student_activity_data\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ACTIVITY_TYPE\"},\"Name\":\"student_activity_data.ACTIVITY_TYPE\",\"NativeReferenceName\":\"ACTIVITY_TYPE\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ACTIVITY_TYPE\"}},\"Function\":5},\"Name\":\"CountNonNull(student_activity_data.ACTIVITY_TYPE)\",\"NativeReferenceName\":\"Count of ACTIVITY_TYPE\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 177.00,
+          "width": 325.00,
+          "x": 109.00,
+          "y": 369.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "UCSB_Color_Theme15249047169254237.json"
+}
